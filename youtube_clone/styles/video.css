@@ -32,6 +32,19 @@ margin-bottom: 4px;
 
 .thumbnail-row {
 margin-bottom: 12px;
+position: relative;
+}
+
+.time-div{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    padding: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Roboto,Arial;
 }
 
 .grid-container {
