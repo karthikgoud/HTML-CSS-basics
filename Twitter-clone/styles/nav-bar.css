@@ -4,34 +4,93 @@ nav{
     top: 0;
     bottom: 0;
     left: 0;
-    width: 160px;
+    width: 180px;
 }
 
 .nav-container{
-    /* background-color: lightsalmon; */
+    /* background-color: lightcoral; */
     position: absolute;
     top: 0;
-    right: 0;
-    width: 50px;
     bottom: 0;
+    right: 0px;
+    width: 80px;
+    display: grid;
+    grid-template-columns: 80px;
+    grid-template-rows: 70px 1fr 140px;    
 }
 
 .icon-container{
-display: flex;
-justify-content: center;
-align-items: center;
-cursor: pointer;
-padding: 12px;
-border-radius: 30px;
+    cursor: pointer;
+}
+
+.top-section .icon-container,
+.middle-section .icon-container{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
 }
 
 .icon-container img{
     height: 30px;
-
-    
 }
 
-.icon-container:hover{
-    background-color: rgb(220, 240, 247);
+.top-section{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.top-section .icon-container:hover{
+    background-color: rgb(231, 246, 252);
+    border-radius: 50px;
+}
+
+.middle-section{
+    /* background-color: lawngreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle-section .icon-container:hover{
+    background-color: rgb(232, 232, 232);
+    border-radius: 50px;
+}
+
+
+.bottom-section{
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bottom-section img{
+    height: 45px;
+    padding: 15px;
+    margin-bottom: 10px;
+
+}
+
+.bottom-section:hover img{
+    border-radius: 50px;
+    background-color: rgb(227, 226, 226);
+
+
+}
+
+
+
+.new-tweet img{
+    height: 80px;
+    opacity: 0.7;
+}
+
+.new-tweet:hover img{
+    opacity: 1;
 }
