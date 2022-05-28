@@ -6,9 +6,9 @@
     height: 200px; */
     display: grid;
     grid-template-columns: 74px 1fr;
-    grid-template-rows: 150px;
+    grid-template-rows: max-content;
     max-width: 600px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .user-profile-image{
@@ -39,7 +39,7 @@
     grid-template-rows: 30px 1fr 30px;
 }
 
-.top-section{
+.top-section-tweet{
     display: grid;
     grid-template-columns: max-content max-content max-content 1fr;
 }
@@ -64,9 +64,16 @@ div{
 
 /* bottom section */
 
-.bottom-section{
+.bottom-section-tweet{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.bottom-section-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
 }
 
 .bottom-section-img img{
