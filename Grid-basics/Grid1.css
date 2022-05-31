@@ -9,21 +9,35 @@ body{
     font-size: 16px;
     background-color: white;
     color: black;
-
 }
 
 .container{
     max-width: 960px;
     margin: 100px auto;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-columns: repeat(3,1fr) ; */
+    grid-template-columns: repeat(auto-fill,minmax(200px,auto)); /* this makes site resposive very good*/
     gap: 10px;
-
 }
 
 .item{
     background-color: steelblue;
     color: white;
     border: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+}
 
+/* .item:nth-of-type(2){
+    background-color: lightcoral;
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    justify-self: center;
+} */
+
+@media (max-width:500px){
+    .container{
+        grid-template-columns: 1fr;
+    }
 }
